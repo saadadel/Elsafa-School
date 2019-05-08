@@ -1,0 +1,94 @@
+.select-type {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.select-type div {
+    width: 50%
+}
+
+.filter select {
+    margin-top: 0
+}
+
+
+
+section > div {
+    width: 100%
+}
+
+.chart {
+    margin-top: 3%;
+    height: 370px
+}
+
+#chartContainer {
+    width: 100%;
+    height: 100%
+}
+
+#chartContainer *,
+#chartContainer {
+    direction: ltr
+}
+
+.reports-filter form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    
+    width: 100%
+}
+
+.reports-filter form div {
+    width: 50%
+}
+
+.reports-filter form label {
+    color: #197ae2
+}
+
+.reports-filter form select {
+    border: 1px solid #ddd;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font: 600 15px 'Changa';
+    padding: 5px;
+    width: 98%;
+    margin-top: 5px
+}
+
+.calendar .calendar-frame tbody td:not(.disabled).selected {
+    background: #40ca6b !important
+}
+
+.hidden
+{
+    display: none;
+}
+.reportbutton {
+    /* position: absolute; */
+    /* top: 105%;
+    right: 30%; */
+    /* margin: 0 5px; */
+    /* padding: 5px 20px; */
+    border: none;
+    width: 60%;
+
+    align-self: center;
+    
+    border-radius: 4px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    cursor: pointer;
+}

@@ -1,0 +1,173 @@
+input:focus,
+button:focus {
+    outline: none
+}
+
+.messages {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+    overflow: hidden
+}
+
+.left-side {
+    width: 30%;
+    border-left: 1px solid #ddd;
+    padding: 2%;
+}
+
+.body {
+    width: 70%
+}
+
+.messages-filter {
+    text-align: center;
+    position: relative;
+}
+
+.messages-filter input {
+    border: 1px solid #ddd;
+    font: 500 15px 'Changa';
+    padding: 2px 5px;
+    width: 100%;
+}
+
+.messages-filter i {
+    font-size: 17px;
+    color: #197ae2;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    cursor: pointer;
+    border-right: 1px solid #197ae2;
+    padding-right: 5px;
+}
+
+.messages-list {
+    height: 475px;
+    overflow: auto;
+}
+
+.messages-list ul {
+    margin-top: 30px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.messages-list ul a {
+    border-bottom: 1px solid #ddd;
+    padding-top: 8px;
+    padding-right: 8px;
+    width: 100%;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out
+}
+
+.messages-list ul a:hover {
+    background: #f0f0f0
+}
+
+.messages-list ul li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messages-list ul li div.img {
+    width: 22%;
+    height: 70px;
+}
+
+div.img img {
+    width: 100%
+}
+
+.messages-list ul li div:not(.img) {
+    width: 75%;
+}
+
+.messages-list ul li div h2 {
+    color: #197ae2;
+    font-size: 17px;
+    margin: 0;
+}
+
+.messages-list ul li div p {
+    color: #898989;
+    margin: 0;
+    font-size: 12px;
+}
+
+.body .header {
+    border-bottom: 1px solid #ddd;
+    padding: 0 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 13%;
+}
+
+.body .header > div {
+    width: 80%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.body .header > div .img {
+    width: 9%;
+    height: 59px;
+}
+
+.body .header > div h2 {
+    margin: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #197ae2;
+}
+
+.body .header > div span {
+    margin-right: 10px;
+    color: #898989;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.body .header i {
+    cursor: pointer;
+    color: #ff4040;
+    font-size: 20px
+}
+
+.messages-container {
+    width: 100%;
+    height: 87%;
+    margin-top: -2px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.messages-container * {
+    width: 100%
+}

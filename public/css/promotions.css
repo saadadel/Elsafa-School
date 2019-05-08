@@ -1,0 +1,150 @@
+.select-type {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.select-type div {
+    width: 50%
+}
+
+.filter select {
+    margin-top: 0
+}
+
+label {
+    color: #197ae2
+}
+
+select {
+    border: 1px solid #ddd;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font: 600 15px 'Changa';
+    padding: 5px;
+    width: 98%;
+    margin-top: 5px
+}
+
+.promotions {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.promotions form {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.promotions h2 {
+    margin: 0;
+    color: #197ae2;
+    text-align: center;
+    width: 100%
+}
+
+.promotions label {
+    font: 600 16px 'Changa';
+}
+
+.promotions input[type="checkbox"] {
+    background: #fff;
+    border: 1px solid #ddd
+}
+
+.promotions input[type='submit'] {
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    width: 120px;
+    cursor: pointer;
+    margin: 30px 10px 0
+}
+
+.container {
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    left: 0;
+    vertical-align: sub;
+    height: 18px;
+    width: 18px;
+    margin-left: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #197ae2;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.chart > div * {
+    direction: ltr
+}
+
+.hidden article {
+    margin-top: 50px
+}

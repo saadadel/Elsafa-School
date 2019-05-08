@@ -1,0 +1,635 @@
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.hide-select {
+    display: none
+}
+
+.chart {
+    width: 100%
+}
+
+#chartContainer {
+    direction: ltr;
+}
+
+#chartContainer * {
+    direction: ltr
+}
+
+.teachers {
+    margin-top: 3%;
+    position: relative
+}
+
+section article {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: space-between
+}
+
+article button {
+    border: none;
+    margin: 0 5px;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    width: 120px;
+    cursor: pointer;
+}
+
+.teachers-list {
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 2%;
+}
+
+.teachers-list > div,
+.someone {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5% 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.someone {
+    position: relative
+}
+
+.name {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+.teachers-list h4 {
+    text-align: center;
+    width: 23.25%;
+    padding: 10px;
+    margin: 0;
+    color: #197ae2
+}
+
+.teachers-list h4 i {
+    font-size: 40px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    color: #197ae2;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+.someone .fa-trash-alt {
+    color: #ff4040;
+    font-size: 20px;
+    position: absolute;
+    top: 35%;
+    left: 30px;
+    cursor: pointer
+}
+
+.teachers-list h4 i:hover {
+    -webkit-transform: scale(1.15) rotateY(180deg);
+    transform: scale(1.15) rotateY(180deg)
+}
+
+.teachers-list h4:first-of-type {
+    width: 7%
+}
+
+.teachers-list .head h4 {
+    color: #888
+}
+
+.teachers-list .row {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .3);
+    margin: 10px 0;
+}
+
+.teachers-list .info form {
+    padding: 2% 4%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+}
+
+.img {
+    width: 210px;
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    height: 210px;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 1px;
+    object-fit: cover;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.img label {
+    width: 100%;
+    height: 96%;
+    padding: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+.img:hover label {
+    opacity: 1
+}
+
+.img .fa-upload {
+    top: 35%;
+    font-size: 50px;
+    position: relative;
+}
+
+.teachers-list .info .details {
+    width: calc(100% - 300px);
+    font-size: 17px
+}
+
+.details div {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative
+}
+
+.details div h3 {
+    font-weight: 600;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    z-index: 1;
+    width: 160px
+}
+
+.details div a {
+    color: #197ae2
+}
+
+.details div span {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.details div input {
+    border: none;
+    padding: 2px 5px;
+    border-radius: 3px;
+    background: #eee;
+    color: #197ae2;
+    font: 500 17px 'Changa';
+    position: absolute;
+    width: 50%;
+    z-index: 0;
+    right: 160px;
+    display: none
+}
+
+.details div i {
+    color: #197ae2;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+    opacity: 0
+}
+
+.details div:hover i {
+    opacity: 1
+}
+
+.details .fa-check-circle {
+    color: #29ac29 !important;
+    position: absolute;
+    left: 0;
+    display: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.show {
+    display: inline-block !important
+}
+
+.teachers-list i:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15)
+}
+
+.modal,
+.attendance-modal,
+.fees-modal {
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+}
+
+.modal > div,
+.attendance-modal > div,
+.fees-modal > div {
+    padding: .5%;
+    position: relative;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 40px -5px rgba(0, 0, 0, .3);
+    margin: 15px 0;
+    background: #fff;
+}
+
+.fa-times {
+    color: #197ae2;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+}
+
+.modal form {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+}
+
+form::-webkit-scrollbar {
+    width: 10px;
+}
+
+form::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+form::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+form::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.modal form .img {
+    margin-bottom: 15px
+}
+
+.modal .add-details {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.modal form .add-details div {
+    width: 40%;
+    margin: 10px;
+}
+input[type='text'],input[type='date'] {
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font: 500 17px 'Changa';
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.modal form .add-details input[type='text'],input[type='date'],.modal select {
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font: 500 17px 'Changa';
+    width: 100%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal form .add-details input[type='submit'] {
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    width: 120px;
+    cursor: pointer;
+    margin: auto;
+    display: inherit;
+}
+
+.modal label {
+    font: 600 15px 'Changa';
+    display: inline-block;
+    width: 100%;
+    color: #197ae2;
+}
+
+.modal .fa-upload {
+    color: #fff
+}
+
+.filter {
+    width: 100%;
+    margin-top: 2%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.filter label,
+.control label {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #197ae2
+}
+
+.filter div {
+    width: 100%
+}
+
+.filter input[type='text'],
+.filter select,
+.control input[type='number'] {
+    border: 1px solid #ddd;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font: 600 15px 'Changa';
+    padding: 5px
+}
+
+.filter input {
+    width: 69.5%;
+}
+
+.filter select {
+    width: 29.5%;
+}
+
+.control h2 {
+    color: #197ae2;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.control {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.control form {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.control form div {
+    width: 31%
+}
+
+.control form div * {
+    display: block;
+    width: 100%
+}
+
+.control form input[type='submit'],
+.attendance-modal form input[type='submit'] {
+    border: none;
+    padding: 5px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    width: 120px;
+    cursor: pointer;
+    margin: auto
+}
+
+.attendance-modal > div {
+    height: auto;
+    width: 40%
+}
+
+.attendance-modal form {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calendar header {
+    width: 100%;
+    right: 0
+}
+
+.calendar header .button {
+    direction: ltr
+}
+
+.calendar thead th,
+.calendar tbody td {
+    width: calc(100% / 7);
+    padding: 10px;
+    font: 500 17px 'Changa';
+}
+
+.calendar tbody td:not(.disabled) {
+    color: #fff;
+    background: #40ca6b;
+    font-weight: 600
+}
+
+.calendar .next {
+    background: #ddd !important;
+    color: #2b2b2b !important
+}
+
+.calendar .calendar-frame tbody td.today {
+    background: #2b2b2b;
+    color: #eee
+}
+
+.calendar .calendar-frame tbody td:not(.disabled).selected {
+    background: #de3b40 !important;
+    color: #fff !important;
+}
+
+.attendance-modal .hidden {
+    display: none;
+}
+
+.fees-modal div {
+    width: 40%;
+    height: 50%;
+    font-family: 'Changa'
+}
+
+.fees-modal div h2 {
+    text-align: center;
+    color: #197ae2;
+    font-size: 24px;
+    margin: 10px
+}
+
+.fees-modal div table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: center
+}
+
+.fees-modal div table th,
+.fees-modal div table td {
+    padding: 6px
+}
+
+.fees-modal div table th {
+    background: #197ae2;
+    color: #fff;
+}
+
+.fees-modal div table td {
+    font-weight: 600;
+    border: 1px solid #ddd
+}
+.info select {
+    border: none;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #197ae2;
+    font: 500 15px 'Changa';
+    width: 200px;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 160px
+}
+.upload {
+    position: absolute;
+    top: 105%;
+    right: 30%;
+    border: none;
+    margin: 0 5px;
+    padding: 5px 20px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background: #197ae2;
+    color: #fff;
+    font: 500 17px 'Changa';
+    cursor: pointer;
+}
