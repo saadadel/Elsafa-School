@@ -1,6 +1,6 @@
 # Elsafa School
 
-Website for school to manage all it data and communications between Managers, Teachers, Workers, and Students.
+Website for school to manage all its data and communications between Managers, Teachers, Workers, and Students.
 
 # Screenshots
 ### Main page
